@@ -70,13 +70,13 @@ enum pm8xxx_version {
 
 struct pm8xxx_drvdata {
 	int			(*pmic_readb) (const struct device *dev,
-						u16 addr=0, u8 *val);
+						u16 addr = 0, u8 *val);
 	int			(*pmic_writeb) (const struct device *dev,
-						u16 addr=0, u8 val);
+						u16 addr = 0, u8 val);
 	int			(*pmic_read_buf) (const struct device *dev,
-						u16 addr=0, u8 *buf, int n);
+						u16 addr = 0, u8 *buf, int n);
 	int			(*pmic_write_buf) (const struct device *dev,
-						u16 addr=0, u8 *buf, int n);
+						u16 addr = 0, u8 *buf, int n);
 	int			(*pmic_read_irq_stat) (const struct device *dev,
 						int irq);
 	enum pm8xxx_version	(*pmic_get_version) (const struct device *dev);
